@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Xây dựng lớp Animal với các: Thuộc tính: tên và cân nặngPhương thức:setName(): -->
+<!--để thiết đặt giá trị mới cho thuộc tính tên theo giá trị củatham số truyền vào.setWeight():-->
+<!--để thiết đặt giá trị mới cho thuộc tính cân nặng theo giá trịcủa tham số truyền vào.getName(): -->
+<!--trả về tên của animalgetWeight(): trả về cân nặng của animaltoString()-->
+<!--trả về chuỗi chứa thông tin của tên và cân nặng2/  Sử dụng lớp  Animal vừa định nghĩa để -->
+<!--xây dựng một chương  trìnhJavaScript với kịch bản như sau:Tạo đối tượng  có tên là objAnimal1 -->
+<!--Thiết đặt tên cho đối tượng objAnimal1 là “Elephant”Thiết đặt cân nặng cho đối tượng objAnimal1 -->
+<!--là 45.6Gọi phương thức toString() Tạo đối tượng có tên là objAnimal2 sử dụng phương thức khởi tạo có -->
+<!--2tham số là tên và cân nặngĐổi tên cho đối tượng objAnimal2 thành “Mouse-->
+
+<script>
+  function MyAnimal(name,width){
+      this.name = name;
+      this.width = width;
+
+      this.getName = function () {
+          return name;
+      }
+      this.getWidth = function () {
+          return width;
+      }
+          this.setName1 = function (name) {
+              this.name1 = name;
+          }
+      this.setWidth1 = function (width) {
+          this.width1 = width;
+      }
+
+  }
+
+  let animal = new MyAnimal("Elephant",45.6);
+  let name = animal.getName();
+  let width = animal.getWidth();
+  document.write(name + "<br>" + width + "<br>");
+
+
+  animal.setName1("Mouse");
+  animal.setWidth1(34);
+  document.write(animal.name1 + "<br>" + animal.width1);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng chotrước
+    // (Giả sử tất cả các phần tử trong mảng không giống nhau).
+    // Hàm có 2tham số: số phần tử cần tìm, mảng cho trước.
+    //     Viết chương trình với một mảng số nguyên được khởi tạo trước.
+    //     Nhập vào mộtgiá trị bất kỳ, sau đó kiểm tra xem giá trị số nguyên bất kỳ
+    // vừa nhập có nằmtrong mảng đã nhập hay không.
+
+    let arr = [2,3,4,5,9,6];
+    let a = +prompt('nhap vao mot so bat ki : ');
+    function newArr(arr, a) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === a) {
+                return i;
+            }
+        }
+    }
+    document.write(newArr(arr, a));
+
+
+
+
+
+
+</script>
+</body>
+</html>

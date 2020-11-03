@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" type="text">
+<input id="b" type="text">
+<button type="button" onclick="pt()">Pt</button>
+<p id="kq"></p>
+
+<script>
+    // Xây dựng hàm giải phương trình bậc nhất, biết tham số là các hệ số nguyên a, b.
+    //     Hàm trả về nghiệm của phương trình theo tham số đã cho.
+    //     Viết chương trình sử dụng hàm vừa xây dựng để giải phương trình bậc nhất với hệ số a = 5; b = 8.
+    // Tổng điểm: 15
+    // Xây dựng hàm: 10  
+    // Sử dụng hàm: 2
+    // Viết mã sạch:
+
+    function pt() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let x = -b / a;
+        if (a != 0) {
+            document.getElementById("kq").innerHTML = "result: " + x;
+        } else if (a == 0 && b == 0) {
+            document.getElementById("kq").innerHTML = "pt vo so nghiem";
+        } else if(a == 0){
+            document.getElementById("kq").innerHTML = "pt vo nghiem";
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
